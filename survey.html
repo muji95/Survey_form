@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      span {
+        color: red;
+      }
+      table {
+        border: 0px solid #ddd;
+      }
+      tr:nth-child(even) {
+        background-color: #ddd;
+        border-color: #ddd;
+      }
+      td {
+        width: 100px;
+      }
+      .fnt {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif">
+      <div>Name<span>*</span></div>
+      <div style="display: inline-block">
+        <input type="text" name="nam" id="first" style="margin-right: 10px" />
+        <div style="font-weight: normal">First</div>
+      </div>
+      <div style="display: inline-block">
+        <input type="text" name="nam" id="first" style="margin-right: 10px" />
+        <div style="font-weight: normal">Last</div>
+      </div>
+    </div>
+    <div class="fnt">
+      <label for="email">Email<span>*</span></label
+      ><br />
+      <input type="text" style="padding-right: 173px" />
+    </div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-weight: bold">
+      Your Experience <span>*</span><br />
+      <span class="fa fa-star fa-lg" style="padding-right: 5px"></span>
+      <span class="fa fa-star fa-lg" style="padding-right: 5px"></span>
+      <span class="fa fa-star fa-lg" style="padding-right: 5px"></span>
+      <span class="fa fa-star fa-lg" style="padding-right: 5px"></span>
+      <span class="fa fa-star fa-lg" style="padding-right: 5px"></span><br />
+      <p style="font-weight: normal">
+        Overall, how would you rate your experience with us?
+      </p>
+    </div>
+    <div>
+      <p style="font-weight: bold; font-family: Arial, Helvetica, sans-serif">
+        How satisfied are you with <span>*</span>
+      </p>
+      <table style="width: 100%">
+        <tr>
+          <th></th>
+          <th>Very Unsatisfied</th>
+          <th>Unsatisfied</th>
+          <th>Nuetral</th>
+          <th>Satisfied</th>
+          <th>Very Satisfied</th>
+          <!-- <td style="padding-right: 100px"></td>
+          <td style="text-align: center">
+            <label for="vu">Very Unsatisfied</label>
+          </td>
+          <td style="text-align: center"><label for="u">Unsatisfied</label></td>
+          <td style="text-align: center"><label for="n">Neutral</label></td>
+          <td style="text-align: center"><label for="s">Satisfied</label></td>
+          <td style="text-align: center">
+            <label for="vs">Very Satisfied</label>
+          </td> -->
+        </tr>
+        <tr style="padding-top: 20px">
+          <td>Purchase</td>
+          <td style="text-align: center">
+            <input type="radio" name="purchase" id="vu" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="purchase" id="u" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="purchase" id="n" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="purchase" id="s" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="purchase" id="vs" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Service</td>
+          <td style="text-align: center">
+            <input type="radio" name="service" id="vu" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="service" id="u" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="service" id="n" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="service" id="s" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="service" id="vs" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Company Overll</td>
+          <td style="text-align: center">
+            <input type="radio" name="co" id="vu" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="co" id="u" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="co" id="n" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="co" id="s" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="co" id="vs" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <p style="font-weight: bold; font-family: Arial, Helvetica, sans-serif">
+        How likely are you to <span>*</span>
+      </p>
+      <table style="width: 100%">
+        <tr>
+          <th></th>
+          <th>Very Unlikely</th>
+          <th>Unlikely</th>
+          <th>Nuetral</th>
+          <th>Likely</th>
+          <th>Very likely</th>
+          <!-- <td style="padding-right: 0px"></td>
+          <td style="text-align: center">
+            <label for="vu">Very Unlikely</label>
+          </td>
+          <td style="text-align: center"><label for="u">Unlikely</label></td>
+          <td style="text-align: center"><label for="n">Neutral</label></td>
+          <td style="text-align: center"><label for="l">Likely</label></td>
+          <td style="text-align: center">
+            <label for="vl">Very Likely</label>
+          </td> -->
+        </tr>
+        <tr style="padding-top: 20px">
+          <td>Buy from us again</td>
+          <td style="text-align: center">
+            <input type="radio" name="buy" id="vu" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="buy" id="u" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="buy" id="n" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="buy" id="l" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="buy" id="vl" />
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding-right: 0px">
+            Recommend our <br />
+            product to others
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="product" id="vu" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="product" id="u" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="product" id="n" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="product" id="l" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="product" id="vl" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Recommend our <br />
+            company to others
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="company" id="vu" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="company" id="u" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="company" id="n" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="company" id="l" />
+          </td>
+          <td style="text-align: center">
+            <input type="radio" name="company" id="vl" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold">
+      Additional comments or suggestions
+    </p>
+    <input type="text" style="height: 100px; width: 95%" /><br />
+    <button type="submit" style="margin-top: 10px">Submit</button>
+  </body>
+</html>
